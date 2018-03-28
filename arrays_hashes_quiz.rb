@@ -124,8 +124,8 @@ users["Erik"][:lottery_numbers].min()
 
 # 6. Return an array of Avril's lottery numbers that are even
 lottery_array = []
-lottery_array = users["Avril"][:lottery_numbers]
-return lottery_array.select(&:even?)
+lottery_array = users["Avril"][:lottery_numbers].select{|num| num.even?}
+return lottery_array
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 users["Erik"][:lottery_numbers].push(7)
