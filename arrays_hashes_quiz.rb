@@ -41,9 +41,9 @@ stops.reverse()
 # stops.reverse!() to change the array in place
 
 # 10. Print out all the stops using a for loop
-for stations in stops
-  p stations
-end
+# for stations in stops
+#   p stations
+# end
 
 ## Exercise B
 
@@ -123,7 +123,7 @@ users["Avril"][:pets][0][:species]
 users["Erik"][:lottery_numbers].min()
 
 # 6. Return an array of Avril's lottery numbers that are even
-return users["Avril"][:lottery_numbers].select{|num| num.even?}
+users["Avril"][:lottery_numbers].select{|num| num.even?}
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 users["Erik"][:lottery_numbers].push(7)
@@ -132,7 +132,7 @@ users["Erik"][:lottery_numbers].push(7)
 users["Erik"][:hometown] = "Edinburgh"
 
 # 9. Add a pet dog to Erik called "Fluffy"
-users["Erik"][:pets].push(:name => "fluffy", :species => "dog")
+users["Erik"][:pets].push(name: "fluffy", species: "dog")
 
 # 10. Add another person to the users hash
 users["Brian"] = {}
