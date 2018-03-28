@@ -41,7 +41,9 @@ stops.reverse()
 # stops.reverse!() to change the array in place
 
 # 10. Print out all the stops using a for loop
-
+for stations in stops
+  p stations
+end
 
 ## Exercise B
 
